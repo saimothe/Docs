@@ -1,0 +1,13 @@
+JS :: Application.js
+---------------------------
+Updatedissueform : check in applicaiton.js
+
+Status_Change drop down View
+------------------------------
+_attributes.html.erb
+--------------
+put call 
+-----------
+{"issue": { "status_id": 2 }}
+------------------
+

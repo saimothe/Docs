@@ -1,0 +1,15 @@
+http://rubysnippets.com/2013/04/10/rails-4-live-streaming-versus-node-dot-js/
+http://blog.remarkablelabs.com/2012/12/live-streaming-rails-4-countdown-to-2013
+http://edgeapi.rubyonrails.org/classes/ActionController/Live.html
+------------------
+  include ActionController::Live
+
+  def stream
+    response.headers['Content-Type'] = 'text/event-stream'
+    100.times {
+      response.stream.write "hello world\n"
+      sleep 1
+    }
+  ensure
+    response.stream.close
+  end
